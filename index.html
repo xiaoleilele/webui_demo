@@ -14,7 +14,8 @@
     <script type="text/javascript" src="./json/Sports.JSON"></script>
     <script type="text/javascript">
         for (var i = 0; i < datalist.length; i++) {
-            var temp = "<li><a href=" + datalist[i].streamingParam + ">" + datalist[i].title + "</a>" + "</li>"
+            // var temp = "<li><a href=" + datalist[i].streamingParam + ">" + datalist[i].title + "</a>" + "</li>"
+            var temp="<li><video controls autoplay><source src="+datalist[i].streamingParam+">"+"</video>"+"</li>"
             $('ul').append(temp);
 
         }
