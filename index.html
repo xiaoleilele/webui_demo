@@ -15,7 +15,7 @@
     <script type="text/javascript">
         for (var i = 0; i < datalist.length; i++) {
             // var temp = "<li><a href=" + datalist[i].streamingParam + ">" + datalist[i].title + "</a>" + "</li>"
-            var temp = "<li><video controls='controls' preload='metadata' src=" + datalist[i].streamingParam + "></video><p>" + datalist[i].title + "</p></li>"
+            var temp = "<li><video controls='controls' preload='none' src=" + datalist[i].streamingParam +" poster=" + datalist[i].frontPic+"></video><p>" + datalist[i].title + "</p></li>"
             $('ul').append(temp);
 
         }
